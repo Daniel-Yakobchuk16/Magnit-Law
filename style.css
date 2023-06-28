@@ -1,0 +1,825 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+}
+
+body{
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 1080px;
+    background-color: rgb(217, 219, 221);
+}
+
+#main_nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#top_nav {
+    display: flex;
+    width: 1400px;
+    height: 250px;
+    padding: 10px;
+    margin-left: 150px;
+}
+
+#nav_logo {
+    width: 300px;
+    height: auto;
+    margin-top: -20px;
+}
+
+#top_nav_right_menu_top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#languages {
+    width: 100%;
+    max-width: 250px;
+    height: 80px;
+    margin: 10px auto;
+    margin-left: 30%;
+}
+
+#languages_list {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 15px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.languages_ua {
+    padding: 20px 10px;
+}
+
+.languages_ua a {
+    color: #23573b;
+    text-decoration: none;
+    padding: 0 10px;
+    border-right: 2px solid green;
+    font-weight: bold;
+}
+
+.languages_en {
+    padding: 20px 10px;
+    color: #23573b;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#contact_img {
+    width: 100%;
+    max-width: 230px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    margin-left: -5%;
+}
+
+.contant_photo {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+#nav_text {
+    width: 100%;
+    max-width: 57%;
+    height: auto;
+}
+
+#nav_text_inside {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    padding-bottom: 12px;
+    margin-left: 60px;
+}
+
+nav .line {
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background: #23573b;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 40px 0 0;
+    opacity: .4;
+    transition: all 0.4s ease;
+}
+
+nav ul li:hover {
+    opacity: .7;
+}
+
+nav ul li.active {
+    opacity: 1;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+    
+nav ul li a {
+    text-decoration: none;
+    color: #23573b;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 14px;
+}
+    
+#business_card {
+    width: 100%;
+    height: 830px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#business_card_photo{
+    width: 100%;
+    height: 830px;
+    text-align: -webkit-center;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.76)), url(photos/background-photo.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#business_card_text{
+    margin-top: 35%;
+    width: 900px;
+    height: 100px;
+    position: absolute;
+}
+
+#business_card_text_tagline{
+    font-size: 500%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+}
+
+#offer{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    background-color: rgb(217, 219, 221);
+}
+
+#offer_femida{
+    width: 550px;
+    height: 550px;
+    margin-left: 2%;
+}
+
+#offer_cards{
+    width: 1100px;
+    height: 850px;
+    margin-left: 7%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ #offer_cards_buisnes{
+    width: 450px;
+    height: 300px;
+} 
+
+#offer_cards_private{
+    width: 450px;
+    height: 300px;
+    cursor: pointer;
+}
+
+#offer_cards_buisnes_photo{
+    width: 450px;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#offer_cards_buisnes_more{
+    display: flex;
+    visibility: hidden;
+    justify-content: space-between;
+    width: 1050px;
+    margin-left: 25px;
+}
+
+#offer_cards_buisnes_more_corporate{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_buisnes_more_tax{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_buisnes_more_bankruptcy{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_private_more{
+    display: flex;
+    visibility: hidden;
+    justify-content: space-around;
+    width: 1050px;
+    height: 305px;
+    position: absolute;
+    left: 750px;
+    flex-wrap: wrap;
+}
+
+#offer_cards_private_more_family{
+    padding: 10px;
+    margin-top: 10%;
+    width: 420px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_private_more_individual_bankruptcy{
+    padding: 10px;
+    margin-top: 10%;
+    width: 420px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#hiiden{
+    position: absolute;
+    pointer-events: none;
+    width: 1050px;
+    height: 305px;
+    visibility: hidden;
+    margin-left: -630px;
+    margin-top: -300px;
+}
+
+#offer_cards_private_photo{
+    width: 450px;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#offer_cards_buisnes_more_corporate_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_buisnes_more_corporate_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_corporate_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_tax_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_tax_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_buisnes_more_tax_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_bankruptcy_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_bankruptcy_photo{
+    width: 37px;
+    height: 37px;
+}
+
+#offer_cards_buisnes_more_bankruptcy_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_private_more_family_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+}
+
+#offer_cards_private_more_family_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_private_more_family_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_private_more_individual_bankruptcy_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+}
+
+#offer_cards_private_more_individual_bankruptcy_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_private_more_individual_bankruptcy_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_corporate:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_buisnes_more_corporate_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_buisnes_more_corporate:hover #offer_cards_buisnes_more_corporate_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_buisnes_more_corporate:hover #offer_cards_buisnes_more_corporate_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_buisnes_more_tax:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_buisnes_more_tax_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_buisnes_more_tax:hover #offer_cards_buisnes_more_tax_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_buisnes_more_tax:hover #offer_cards_buisnes_more_tax_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_buisnes_more_bankruptcy:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_buisnes_more_bankruptcy_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_buisnes_more_bankruptcy:hover #offer_cards_buisnes_more_bankruptcy_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_buisnes_more_bankruptcy:hover #offer_cards_buisnes_more_bankruptcy_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_private_more_family:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_private_more_family_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_more_family:hover #offer_cards_private_more_family_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_private_more_family:hover #offer_cards_private_more_family_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_private_more_individual_bankruptcy_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover #offer_cards_private_more_individual_bankruptcy_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover #offer_cards_private_more_individual_bankruptcy_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#quote{
+    position: absolute;
+    width: 1100px;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: 40%;
+    text-align: center;
+}
+
+#quote_text{
+    font-size: 31px;
+}
+
+#team{
+    width: 100%;
+    height: 1800px;
+    background-color: #d9dbdd;
+}
+
+#team_all{
+    width: 100%;
+    height: 800px;
+}
+
+#team_all_photo{
+    margin-top: 5%;
+} 
+
+#our_team{
+    width: 100%;
+    height:500px;
+    margin-top: 3%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+:root {
+    --brand-color: #23573b;
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+}
+
+#contact_img_card{
+    margin-top: 10px;
+}
+
+#contact_img_card_phone{
+    display: flex;
+}
+
+#contant_photo_card{
+    width: 30px;
+    height: 30px;
+}
+
+#contact_img_card_email{
+    display: flex;
+}
+
+#contact_img_card_email_text{
+    color: white;
+    font-size: 20px;
+}
+
+#contact_img_card_phone_text{
+    color: white;
+    font-size: 20px;
+}
+  
+.card {
+    display: grid;
+    place-items: center;
+    width: 80vw;
+    max-width: 21.875rem;
+    height: 28.125rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+  
+.card > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+  
+.card__background {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+  
+.card__content {
+    --flow-space: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: 35%;
+    width: 100%;
+    padding: 12% 1.25rem 1.875rem;
+    background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%
+    );
+}
+  
+.card__content--container{
+    --flow-space: 1.25rem;
+}
+  
+.card__title{
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-size: 35px;
+    margin-top: -2%;
+    color: white;
+    font-weight: 100;
+}
+  
+.card__title::after{
+    content: "";
+    position: absolute;
+    height: 0.3125rem;
+    width: calc(100% + 1.25rem);
+    bottom: calc((1.25rem - 0.5rem) * -1);
+    left: -1.25rem;
+    background-color: var(--brand-color);
+}
+
+  
+@media (any-hover: hover) and (any-pointer: fine){
+
+    .card__content{
+      transform: translateY(35%);
+      transition: transform 500ms ease-out;
+      transition-delay: 500ms;
+    }
+  
+    .card__title::after{
+      opacity: 0;
+      transform: scaleX(0);
+      transition: opacity 500ms ease-in, transform 500ms ease-out;
+      transition-delay: 500ms;
+      transform-origin: right;
+    }
+  
+    .card__background{
+      transition: transform 500ms ease-in;
+    }
+  
+    .card__content--container > :not(.card__title),
+    .card__button{
+      opacity: 0;
+      transition: transform 500ms ease-out, opacity 500ms ease-out;
+    }
+  
+    .card:hover,
+    .card:focus-within{
+      transform: scale(1.05);
+      transition: transform 500ms ease-in;
+    }
+  
+    .card:hover .card__content,
+    .card:focus-within .card__content{
+      transform: translateY(0);
+      transition: transform 500ms ease-in;
+    }
+  
+    .card:focus-within .card__content{
+      transition-duration: 0ms;
+    }
+  
+    .card:hover .card__background,
+    .card:focus-within .card__background{
+      transform: scale(1.3);
+    }
+  
+    .card:hover .card__content--container > :not(.card__title),
+    .card:hover .card__button,
+    .card:focus-within .card__content--container > :not(.card__title),
+    .card:focus-within .card__button{
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+      transition-delay: 500ms;
+    }
+  
+    .card:hover .card__title::after,
+    .card:focus-within .card__title::after{
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: opacity 500ms ease-in, transform 500ms ease-in;
+      transition-delay: 500ms;
+    }
+}
+  
+
+
+.items .item {
+    position: absolute;
+    margin-top: 5%;
+    left: 20%;
+    width: 1200px;
+    height: 800px;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+  
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+  
+.item.prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-100%);
+}
+  
+.item.next {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(100%);
+}
+
+.button-container{
+    position: absolute;
+    margin-top: 5%;
+}
+
+.items .button-container {
+    position: absolute;
+    width: 275px;
+    z-index: 100;
+}
+  
+.button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+  
+.button-container .button:hover {
+    opacity: 1;
+}
+  
+.button-container .button:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-top: 10px solid #ffffff;
+    border-right: 10px solid #ffffff;
+    transform: rotate(-135deg);
+    margin-right: 60px;
+    z-index: -99;
+}
+  
+#btn2{
+    transform: rotate(-180deg);
+    position: absolute;
+    left: 96vw;
+    top: 40vh;
+}
+
+#btn1{
+    position: absolute;
+    left: 4vw;
+    top: 35vh;
+}
+
+.button-container .button:nth-child(1) {
+    float: left;
+}
+  
+.button-container .button:nth-child(2) {
+    float: right;
+}
+
+#our_team_description{
+    width: 100%;
+    height: 180px;
+    margin-top: 8%;
+}
+
+#our_team_description_text{
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#our_team_description_text_tagline{
+    font-size: 200%;
+    text-align: center;
+}
+
+footer{
+    width: 1920px;
+    height: 800px;
+    background-color: #23573b;
+}

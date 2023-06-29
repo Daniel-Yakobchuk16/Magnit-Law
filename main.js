@@ -1,64 +1,80 @@
-var nav = $('nav');
-var line = $('<div />').addClass('line');
+$(document).ready(function() {
+  // При клике на ссылку с якорем
+  $('a[href^="#"]').click(function(e) {
+    e.preventDefault();
 
-line.appendTo(nav);
-
-var active = nav.find('.active');
-var pos = 0;
-var wid = 0;
-
-if(active.length) {
-  pos = active.position().left;
-  wid = active.width();
-  line.css({
-    left: pos,
-    width: wid
-  });
-}
-
-nav.find('ul li a').click(function(e) {
-  e.preventDefault();
-  if(!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
-    
-    nav.addClass('animate');
-
-    var _this = $(this);
-
-    nav.find('ul li').removeClass('active');
-
-    var position = _this.parent().position();
-    var width = _this.parent().width();
-
-    if(position.left >= pos) {
-      line.animate({
-        width: ((position.left - pos) + width)
-      }, 300, function() {
-        line.animate({
-          width: width,
-          left: position.left
-        }, 150, function() {
-          nav.removeClass('animate');
-        });
-        _this.parent().addClass('active');
-      });
-    } else {
-      line.animate({
-        left: position.left,
-        width: ((pos - position.left) + wid)
-      }, 300, function() {
-        line.animate({
-          width: width
-        }, 150, function() {
-          nav.removeClass('animate');
-        });
-        _this.parent().addClass('active');
-      });
+    var target = $(this.hash);
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500);
     }
+  });
 
-    pos = position.left;
-    wid = width;
+  // Ваш код для анимации подчеркивания активного пункта меню
+  var nav = $('nav');
+  var line = $('<div />').addClass('line');
+
+  line.appendTo(nav);
+
+  var active = nav.find('.active');
+  var pos = 0;
+  var wid = 0;
+
+  if (active.length) {
+    pos = active.position().left;
+    wid = active.width();
+    line.css({
+      left: pos,
+      width: wid
+    });
   }
+
+  nav.find('ul li a').click(function(e) {
+    e.preventDefault();
+    if (!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+
+      nav.addClass('animate');
+
+      var _this = $(this);
+
+      nav.find('ul li').removeClass('active');
+
+      var position = _this.parent().position();
+      var width = _this.parent().width();
+
+      if (position.left >= pos) {
+        line.animate({
+          width: ((position.left - pos) + width)
+        }, 300, function() {
+          line.animate({
+            width: width,
+            left: position.left
+          }, 150, function() {
+            nav.removeClass('animate');
+          });
+          _this.parent().addClass('active');
+        });
+      } else {
+        line.animate({
+          left: position.left,
+          width: ((pos - position.left) + wid)
+        }, 300, function() {
+          line.animate({
+            width: width
+          }, 150, function() {
+            nav.removeClass('animate');
+          });
+          _this.parent().addClass('active');
+        });
+      }
+
+      pos = position.left;
+      wid = width;
+    }
+  });
 });
+
 
 var buisnes = document.getElementById('offer_cards_buisnes');
 var private = document.getElementById('offer_cards_private');
@@ -129,7 +145,7 @@ const slider = document.querySelector(".items");
 
 		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
 
-		const gotoNum = number => {
+const gotoNum = number => {
 			current = number;
 			prev = current - 1;
 			next = current + 1;
@@ -151,5 +167,20 @@ const slider = document.querySelector(".items");
 			slides[current].classList.add("active");
 			slides[prev].classList.add("prev");
 			slides[next].classList.add("next");
-		}
+}
 
+$(document).ready(function() {
+  // Отображение стрелки при прокрутке вниз
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#topButton').addClass('show');
+    } else {
+      $('#topButton').removeClass('show');
+    }
+  });
+
+  // Плавная прокрутка вверх при клике на стрелку
+  $('#topButton').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
+});

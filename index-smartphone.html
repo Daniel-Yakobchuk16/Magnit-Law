@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Magnit Law</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style-smartphone.css'>
+    <link rel="Website Icon" type="png" href="photos/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Noto+Sans&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/corbel" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <div id="topButton">&uarr;</div> -->
+    <header>
+        
+        <div id="main_nav">
+
+            <div id="top_nav">
+
+                <div id="nav_logo">
+                    <img src="photos/logo-icon.png" alt="Логотип фирмы" id="nav_logo_photo">
+                </div>
+                
+                <div id="top_nav_right_menu">
+
+                    <div id="top_nav_right_menu_top">
+
+                        <div id="top_nav_right_menu_top_info">
+                            
+                            <div id="languages">
+
+                                <ul id="languages_list">
+
+                                    <li class="languages_ua"> 
+                                        <a lang="uk" hreflang="uk" href="#u" class="languages_ua">УКР</a>
+                                    </li>
+                                    <li class="languages_en">
+                                        <a lang="en-US" hreflang="en-US" href="#e" class="languages_en">ENG</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+
+                            <div id="contact_img">
+
+                                <a href="https://www.facebook.com/MagnitLF" target="_blank"> <img src="photos/facebook-circle-line.png" alt="facebook-line" class="contant_photo"> </a> 
+
+                            </div>
+                            
+                        </div> 
+
+                        <div id="nav_text">
+
+                            <nav id="nav_text_inside">
+
+                                    <ul>
+
+                                      <li class="active"><a href="#magnit">Magnit Law</a></li>
+                                      <li><a href="#offer">Послуги</a></li>
+                                      <li><a href="#team">Команда</a></li>
+                                      <li><a href="#footer_left">Контакти</a></li>
+                                      
+                                   </ul>
+
+                            </nav>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="business_card">
+
+            <div id="business_card_photo">
+            </div>
+
+            <div id="business_card_text">
+
+                <p id="business_card_text_tagline">Ваги Феміди залізні</p>
+
+            </div>
+
+        </div> 
+
+    </header>
+
+    <section id="offer">
+
+        <div id="offer_femida">
+
+            <img src="photos/Femida.svg" alt="Femida">
+
+        </div>
+
+
+        <div id="offer_cards">
+
+            <div id="offer_cards_buisnes" onclick="toggleBlocks_buisnes()">
+
+                <img src="photos/buisnes.jpg" alt="" id="offer_cards_buisnes_photo">
+              
+
+                    <div id="offer_cards_buisnes_more">
+
+                        <div id="offer_cards_buisnes_more_corporate">
+
+                            <div id="offer_cards_buisnes_more_corporate_div_photo">
+                                <img src="photos/bank-line.png" alt="bank-photo" id="offer_cards_buisnes_more_corporate_photo">
+                            </div>
+
+                            <div id="offer_cards_buisnes_more_corporate_text">
+                                <p>Корпоративне та комерційне право</p>
+                            </div>
+
+                        </div>
+
+                        <div id="offer_cards_buisnes_more_tax">
+
+                            <div id="offer_cards_buisnes_more_tax_div_photo">
+
+                                <img src="photos/scales-line.png" alt="scales-line" id="offer_cards_buisnes_more_tax_photo">
+
+                            </div>
+
+                            <div id="offer_cards_buisnes_more_tax_text">
+
+                                <p>Податкове та митне право</p>
+
+                            </div>
+
+                        </div>
+
+                        <div id="offer_cards_buisnes_more_bankruptcy">
+                            
+                            <div id="offer_cards_buisnes_more_bankruptcy_div_photo">
+
+                                <img src="photos/wallet-2-line.png" alt="wallet-2-line" id="offer_cards_buisnes_more_bankruptcy_photo">
+
+                            </div>
+
+                            <div id="offer_cards_buisnes_more_bankruptcy_text">
+
+                                <p>Реструктуризація та банкрутство</p>
+
+                            </div>
+                            
+                        </div> 
+
+                    </div>
+
+            </div>
+
+            <div id="offer_cards_private" onclick="toggleBlocks_private()">
+
+                <img src="photos/private.jpg" alt="" id="offer_cards_private_photo">
+            
+                
+                <div id="offer_cards_private_more">
+
+                    <div id="offer_cards_private_more_family">
+                        
+                        <div id="offer_cards_private_more_family_div_photo">
+
+                            <img src="photos/team-line.png" alt="team-line" id="offer_cards_private_more_family_photo">
+
+                        </div>
+
+                        <div id="offer_cards_private_more_family_text">
+
+                            <p>Сімейне та спадкове право</p>
+
+                        </div>
+
+                    </div>
+
+                    <div id="offer_cards_private_more_individual_bankruptcy">
+
+                        <div id="offer_cards_private_more_individual_bankruptcy_div_photo">
+
+                            <img src="photos/hand-coin-line.png" alt="hand-coin-line" id="offer_cards_private_more_individual_bankruptcy_photo">
+
+                        </div>
+
+                        <div id="offer_cards_private_more_individual_bankruptcy_text">
+
+                            <p>  Банкрутство фізичних   осіб   </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> 
+<!-- 
+        <div id="quote">
+
+            <q id="quote_text">Знаходити вихід із лабіринтів чисел та людських взаємовідносин – це покликання кожного учасника нашого об’єднання. </q>
+
+        </div>  -->
+
+    </section>
+
+  <!--  <section id="team">
+
+        <div id="team_all">
+
+            <div class="items">
+                <div class="item active">
+                    <img src="photos/slider/slide-1.jpg">
+                </div>
+                <div class=" item next">
+                    <img src="photos/slider/slide-2.jpg">
+                </div>
+                <div class="item">
+                    <img src="photos/slider/slide-3.jpg">
+                </div>
+                <div class="item">
+                    <img src="photos/slider/slide-4.jpg">
+                </div>
+                <div class="item prev">
+                    <img src="photos/slider/slide-2.jpg">
+                </div>
+                <div class="button-container">
+                    <div class="button" id="btn1"><i class="fa-angle-left"></i></div>
+                    <div class="button" id="btn2"><i class="fa-angle-right"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="our_team_description">
+    
+            <div id="our_team_description_text">
+  
+              <q id="our_team_description_text_tagline">
+
+                  Дотримання моральних та етичних правил, міжнародних стандартів юридичної професії  забезпечує належний та ефективний захист прав клієнтів, надійність та конфіденційність та, як результат, створює  належну репутацію  
+              
+              </q>
+  
+            </div>
+  
+          </div>
+
+        <div id="our_team">
+
+                <article class="card">
+                    <img
+                    class="card__background"
+                    src="photos/Тетяна Філатова а.jpg"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                    width="1920"
+                    height="2193"
+                    />
+                    <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">Тетяна Філатова</h2>
+
+                        <div id="contact_img_card">
+                            <div id="contact_img_card_phone">
+                                <a href="#i"> <img src="photos/phone-line.png" alt="phone-line" id="contant_photo_card">     </a>
+                                <p id="contact_img_card_phone_text">+38 000 000 00 00</p> 
+                            </div>
+
+                            <div id="contact_img_card_email">
+
+                                <a href="#t"> <img src="photos/mail-line.png" alt="mail-line" id="contant_photo_card">      </a>
+                                <p id="contact_img_card_email_text">your_email@gmail.com</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img
+                    class="card__background"
+                    src="photos/Дмитро Соколик а.jpg"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                    width="1920"
+                    height="2193"
+                    />
+                    <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">Дмитро Соколик</h2>
+
+                        <div id="contact_img_card">
+                            <div id="contact_img_card_phone">
+                                <a href="#i"> <img src="photos/phone-line.png" alt="phone-line" id="contant_photo_card">     </a>
+                                <p id="contact_img_card_phone_text">+38 095 195 06 23</p> 
+                            </div>
+
+                            <div id="contact_img_card_email">
+
+                                <a href="#t"> <img src="photos/mail-line.png" alt="mail-line" id="contant_photo_card">      </a>
+                                <p id="contact_img_card_email_text">avotar@gmail.com</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img
+                    class="card__background"
+                    src="photos/Ігор Філіпп а.jpg"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                    width="1920"
+                    height="2193"
+                    />
+                    <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">Ігор Філіпп</h2>
+
+                        <div id="contact_img_card">
+                            <div id="contact_img_card_phone">
+                                <a href="#i"> <img src="photos/phone-line.png" alt="phone-line" id="contant_photo_card">     </a>
+                                <p id="contact_img_card_phone_text">+38 095 195 06 23</p> 
+                            </div>
+
+                            <div id="contact_img_card_email">
+
+                                <a href="#t"> <img src="photos/mail-line.png" alt="mail-line" id="contant_photo_card">      </a>
+                                <p id="contact_img_card_email_text">avotar@gmail.com</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </article>
+
+
+
+              <article class="card">
+                <img
+                  class="card__background"
+                  src="photos/Інна Лазарева а.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">Інна Лазарева</h2>
+
+                    <div id="contact_img_card">
+                        <div id="contact_img_card_phone">
+                            <a href="#i"> <img src="photos/phone-line.png" alt="phone-line" id="contant_photo_card">     </a>
+                            <p id="contact_img_card_phone_text">+38 000 000 00 00</p> 
+                        </div>
+
+                        <div id="contact_img_card_email">
+
+                            <a href="#t"> <img src="photos/mail-line.png" alt="mail-line" id="contant_photo_card">      </a>
+                            <p id="contact_img_card_email_text">your_email@gmail.com</p>
+
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  class="card__background"
+                  src="photos/Давід-Майсурадзу.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">Давід Майсурадзу</h2>
+
+                    <div id="contact_img_card">
+                        <div id="contact_img_card_phone">
+                            <a href="#i"> <img src="photos/phone-line.png" alt="phone-line" id="contant_photo_card">     </a>
+                            <p id="contact_img_card_phone_text">+38 000 000 00 00</p> 
+                        </div>
+
+                        <div id="contact_img_card_email">
+
+                            <a href="#t"> <img src="photos/mail-line.png" alt="mail-line" id="contant_photo_card">      </a>
+                            <p id="contact_img_card_email_text">your_email@gmail.com</p>
+
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              
+              
+            </div>
+            
+            
+            
+        </section>
+        
+        <footer>
+            
+            <div id="footer_info">
+                <div id="footer_left">
+
+                    <div id="footer_left_contact">
+
+                        
+
+                    </div>
+
+                </div>
+
+                <div id="footer_right">
+
+                    <div id="footer_right_map">
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+-->
+  <script src='main_smartphone.js'></script> 
+
+
+</body>
+</html>
+

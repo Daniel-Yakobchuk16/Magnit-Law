@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(217, 219, 221);
+}
+
+#main_nav{
+    width: 100%;
+}
+
+#nav_logo{
+    width: 250px;
+    height: auto;
+}
+
+#top_nav{
+    display: flex;
+}
+
+#nav_logo_photo{
+    width: 200px;
+    height: auto;
+    margin-left: -8vw;
+    margin-top: -4vh;
+}
+
+#top_nav_right_menu{
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+}
+
+#top_nav_right_menu_top_info{
+    display: flex;
+}
+
+#top_nav_right_menu_top {
+    width: 100%;
+    height: auto;
+}
+
+#languages {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto;
+    margin-left: -18vw;
+}
+
+#languages_list {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 15px;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.languages_ua {
+    padding: 20px 5px;
+    font-size: 90%;
+}
+
+.languages_ua a {
+    color: #23573b;
+    text-decoration: none;
+    padding: 0 10px;
+    border-right: 2px solid green;
+    font-weight: bold;
+}
+.languages_en{
+    padding: 20px 5px;
+    font-size: 90%;
+}
+.languages_en a{
+    color: #23573b;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#contact_img {
+    position: absolute;
+    max-width: 50px;
+    margin-top: 2.7vh;
+    margin-left: 27vw;
+}
+
+.contant_photo {
+    width: 30px;
+}
+
+#nav_text {
+    width: 100%;
+    height: auto;
+    margin-left: -50vw;
+    margin-top: -2vh;
+}
+
+#nav_text_inside {
+    width: 100%;
+    margin-top: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+nav .line {
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background: #23573b;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 40px 0 0;
+    opacity: .4;
+    transition: all 0.4s ease;
+}
+
+nav_text_inside a{
+    word-spacing: 100%;
+}
+
+nav ul li:hover {
+    opacity: .7;
+}
+
+nav ul li.active {
+    opacity: 1;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+    
+nav ul li a {
+    text-decoration: none;
+    color: #23573b;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 11px;
+}
+
+#business_card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#business_card_photo{
+    width: 100%;
+    height: 320px;
+    text-align: -webkit-center;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.76)), url(photos/background-photo.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+#business_card_text{
+    margin-top: 60%;
+    max-width: 900px;
+    position: absolute;
+}
+
+#business_card_text_tagline{
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+}
+
+#offer{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(217, 219, 221);
+}
+
+#offer_femida{
+    width:300px;
+    margin-left: 15%;
+}
+
+#offer_cards{
+    max-width: 1100px;
+
+}
+
+ #offer_cards_buisnes{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+} 
+
+#offer_cards_private{
+    width: 100%;
+    cursor: pointer;
+}
+
+#offer_cards_buisnes_photo{
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#offer_cards_buisnes_more{
+    visibility: hidden;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1050px;
+    margin-left: 25px;
+}
+
+#offer_cards_buisnes_more_corporate{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_buisnes_more_tax{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_buisnes_more_bankruptcy{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_private_more{
+    display: flex;
+    visibility: hidden;
+    justify-content: space-around;
+    max-width: 1050px;
+    height: 305px;
+    flex-wrap: wrap;
+}
+
+#offer_cards_private_more_family{
+    padding: 10px;
+    margin-top: 10%;
+    max-width: 420px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#offer_cards_private_more_individual_bankruptcy{
+    padding: 10px;
+    margin-top: 10%;
+    width: 420px;
+    height: 200px;
+    background-color: #d4d5d6;
+}
+
+#hiiden{
+    position: absolute;
+    pointer-events: none;
+    width: 1050px;
+    height: 305px;
+    visibility: hidden;
+    margin-left: -630px;
+    margin-top: -300px;
+}
+
+#offer_cards_private_photo{
+    width: 100%;
+    max-width: 450px;
+    background-repeat: no-repeat;
+}
+
+#offer_cards_buisnes_more_corporate_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_buisnes_more_corporate_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_corporate_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_tax_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_tax_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_buisnes_more_tax_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_bankruptcy_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_bankruptcy_photo{
+    width: 37px;
+    height: 37px;
+}
+
+#offer_cards_buisnes_more_bankruptcy_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_private_more_family_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+}
+
+#offer_cards_private_more_family_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_private_more_family_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_private_more_individual_bankruptcy_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+}
+
+#offer_cards_private_more_individual_bankruptcy_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_private_more_individual_bankruptcy_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_corporate:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_buisnes_more_corporate_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_buisnes_more_corporate:hover #offer_cards_buisnes_more_corporate_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_buisnes_more_corporate:hover #offer_cards_buisnes_more_corporate_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_buisnes_more_tax:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_buisnes_more_tax_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_buisnes_more_tax:hover #offer_cards_buisnes_more_tax_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_buisnes_more_tax:hover #offer_cards_buisnes_more_tax_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_buisnes_more_bankruptcy:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_buisnes_more_bankruptcy_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_buisnes_more_bankruptcy:hover #offer_cards_buisnes_more_bankruptcy_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_buisnes_more_bankruptcy:hover #offer_cards_buisnes_more_bankruptcy_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_private_more_family:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_private_more_family_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_more_family:hover #offer_cards_private_more_family_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_private_more_family:hover #offer_cards_private_more_family_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_private_more_individual_bankruptcy_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover #offer_cards_private_more_individual_bankruptcy_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover #offer_cards_private_more_individual_bankruptcy_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#quote{
+    position: absolute;
+    width: 1100px;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: 40%;
+    text-align: center;
+}
+
+#quote_text{
+    font-size: 31px;
+}

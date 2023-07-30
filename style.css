@@ -7,6 +7,7 @@
 
 body{
     overflow-x: hidden;
+    min-width: 1200px;
 
 }
 a {
@@ -196,12 +197,13 @@ nav ul li a {
     text-align: center;
     font-family: 'Montserrat Alternates';
 }
-
-@media only screen and (max-width: 600px) {
+/* 
+@media only screen and (max-width: 768px) {
 
     html, body {
-        /* Убирает прокрутку по горизонтале, для мобильной версии */
+       
         overflow-x: hidden;
+        max-width: 768px!important;
     }
     #main_nav {
       height: auto;
@@ -229,6 +231,7 @@ nav ul li a {
     #languages_list {
       letter-spacing: 5px;
       font-size: 16px;
+      margin-left: -10em;
     }
 
     .languages_en{
@@ -240,23 +243,23 @@ nav ul li a {
     }
 
     #nav_text{
-        
+        margin-top: 8vh;
     }
+
     #nav_text_inside {
       margin-top: 8vh;
-      margin-left: -18vw;
+      margin-left: -60vw;
       max-width: 390px;
       position: sticky;
     }
-    #nav_text_inside{
-        
-    }
+
     nav ul li {
       margin: 0 20px 0 0;
     }
 
     nav ul li a {
         font-size: 11px;
+
     }
     
     #business_card_photo {
@@ -273,8 +276,49 @@ nav ul li a {
     #business_card_text_tagline {
       font-size: 300%;
     }
-}
-  
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    #nav_text_inside {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    #business_card_text_tagline {
+        font-size: 300%;
+    }
+
+    #top_nav_right_menu {
+
+    }
+    #nav_logo {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    #top_nav_right_menu {
+        max-width: 400px;
+    }
+
+    #business_card_photo {
+        height: 600px;
+    }
+    #offer_cards {
+        flex-direction: column;
+        height: auto;
+    }
+    #offer_cards_buisnes,
+    #offer_cards_private {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #offer_cards_buisnes_photo,
+    #offer_cards_private_photo {
+        max-width: 90%;
+    }
+
+} */
+ 
+
 
 #offer{
     width: 100%;
@@ -298,15 +342,16 @@ nav ul li a {
     justify-content: space-between;
 }
 
- #offer_cards_buisnes{
-    width: 450px;
+#offer_cards_buisnes{
+    max-width: 450px;
     height: 300px;
 } 
 
 #offer_cards_private{
-    width: 450px;
+    max-width: 450px;
     height: 300px;
     cursor: pointer;
+    margin: 0 40px 0 40px;
 }
 
 #offer_cards_buisnes_photo{
@@ -319,43 +364,43 @@ nav ul li a {
     display: flex;
     visibility: hidden;
     justify-content: space-between;
-    width: 1050px;
-    margin-left: 25px;
+    width: 1200px!important;
+
+    margin-left: -40px;
 }
 
 #offer_cards_buisnes_more_corporate{
     padding: 10px;
     margin-top: 10%;
     width: 320px;
-    height: 200px;
     background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
 }
 
 #offer_cards_buisnes_more_tax{
     padding: 10px;
     margin-top: 10%;
     width: 320px;
-    height: 200px;
     background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
 }
 
 #offer_cards_buisnes_more_bankruptcy{
     padding: 10px;
     margin-top: 10%;
-    width: 320px;
-    height: 200px;
+    max-width: 320px;
+    width: 100%;
     background-color: #d4d5d6;
+    margin: 40px 60px 0 40px;
 }
 
 #offer_cards_private_more{
     display: flex;
     visibility: hidden;
     justify-content: space-around;
-    width: 1050px;
+    max-width: 1050px;
     height: 305px;
-    position: absolute;
-    left: 750px;
-    flex-wrap: wrap;
+    margin-left: -450px;
 }
 
 #offer_cards_private_more_family{
@@ -364,14 +409,16 @@ nav ul li a {
     width: 420px;
     height: 200px;
     background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
 }
 
 #offer_cards_private_more_individual_bankruptcy{
     padding: 10px;
     margin-top: 10%;
-    width: 420px;
+    max-width: 420px;
     height: 200px;
     background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
 }
 
 #hiiden{
@@ -592,7 +639,7 @@ nav ul li a {
 
 #quote{
     position: absolute;
-    width: 1100px;
+    max-width: 1100px;
     height: 100px;
     margin-left: 35%;
     margin-top: 40%;
@@ -627,8 +674,8 @@ nav ul li a {
     width: 100%;
     height: 450px;
     overflow: hidden;
+    justify-content: space-evenly;
     display: flex;
-    justify-content: space-around;
     margin-left: -8vw;
 }
 
@@ -637,20 +684,21 @@ nav ul li a {
     height: 450px;
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
     margin-top: 20vh;
-    margin-left: -10vw;
+    justify-content: space-evenly;
+    margin-left: -8vw;
 }
 
 /* Content-1:Start */
+
 .box {
     max-width: 450px;
-    height: 650px;
+    height: auto;
     border-radius: 20px;
     padding: 10px;
     text-align: center;
     background: #ededed;
-    position: absolute;
+    position: absolute;    
 }
   
 .content {
@@ -799,20 +847,27 @@ button.message:hover{
     }
 }
   /* Responsiveness:End */
-  
-.items .item{
+  .items {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.items .item {
     position: absolute;
     margin-top: 5%;
     left: 20%;
-    width: 1200px;
-    height: 800px;
+    width: 60%;
+    max-width: 1200px;
+    height: 60vh;
+    max-height: 800px;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
 }
-  
-.item img{
+
+.item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -836,20 +891,23 @@ button.message:hover{
     transform: translate(100%);
 }
 
-.button-container{
+.button-container {
     position: absolute;
-    margin-top: 5%;
+    top: 5%;
+    left: 0;
+    right: 0;
 }
 
-.items .button-container{
+.items .button-container {
     position: absolute;
-    width: 275px;
+    width: 20%; /* Изменил на проценты */
+    max-width: 275px; /* Добавил максимальную ширину */
     z-index: 100;
 }
   
-.button-container .button{
+.button-container .button {
     color: #fff;
-    font-size: 32px;
+    font-size: 2vw; /* Изменил на относительный размер шрифта вьюпорта */
     cursor: pointer;
     position: relative;
     opacity: 1;
@@ -860,23 +918,23 @@ button.message:hover{
     opacity: 1;
 }
   
-.button-container .button:before{
+.button-container .button:before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border-top: 10px solid #ffffff;
-    border-right: 10px solid #ffffff;
+    width: 3vw; /* Изменил на относительный размер вьюпорта */
+    height: 3vw; /* Изменил на относительный размер вьюпорта */
+    border-top: 0.8vw solid #ffffff; /* Изменил на относительный размер вьюпорта */
+    border-right: 0.8vw solid #ffffff; /* Изменил на относительный размер вьюпорта */
     transform: rotate(-135deg);
-    margin-right: 60px;
+    margin-right: 4vw; /* Изменил на относительный размер вьюпорта */
     z-index: -99;
 }
   
-#btn2{
+#btn2 {
     transform: rotate(-180deg);
     position: absolute;
-    left: 96vw;
-    top: 40vh;
+    right: -80vw;
+    top: 40vh; /* Измените значение при необходимости */
 }
 
 #btn1{
@@ -892,6 +950,7 @@ button.message:hover{
 .button-container .button:nth-child(2) {
     float: right;
 }
+
 
 #our_team_description{
     width: 100%;
@@ -963,7 +1022,6 @@ footer{
                  -50px -50px 100px #296645;
 }
 
-
 #footer_right{
     width: 50%;
     height: 100%;
@@ -972,6 +1030,7 @@ footer{
 }
 
 #footer_right_map{
+    font-family: 'Courier New', Courier, monospace;
     width: 90%;
     height: 90%;
 }
@@ -1042,6 +1101,6 @@ footer{
 }
 #footer_quote_text{
     color: white;
-    font-size: 180%;
+    font-size: 160%;
     text-align: center;
 }

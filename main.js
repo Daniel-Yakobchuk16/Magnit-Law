@@ -186,6 +186,12 @@ $(document).ready(function() {
   });
 });
 
+window.addEventListener('resize',(e)=> { 
+  document.querySelector('.container_gallery').style.transform = 
+    document.body.clientWidth>1300 ? '' : 
+      `scale(${document.body.clientWidth/1380}) translate(${-(1300-document.body.clientWidth)/2}px)`; 
+});
+
 
 
 

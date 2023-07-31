@@ -364,8 +364,7 @@ nav ul li a {
     display: flex;
     visibility: hidden;
     justify-content: space-between;
-    width: 1200px!important;
-
+    width: 1160px!important;
     margin-left: -40px;
 }
 
@@ -390,6 +389,7 @@ nav ul li a {
     margin-top: 10%;
     max-width: 320px;
     width: 100%;
+    height: 180px;
     background-color: #d4d5d6;
     margin: 40px 60px 0 40px;
 }
@@ -399,15 +399,14 @@ nav ul li a {
     visibility: hidden;
     justify-content: space-around;
     max-width: 1050px;
-    height: 305px;
-    margin-left: -450px;
+    margin-left: -600px;
 }
 
 #offer_cards_private_more_family{
     padding: 10px;
     margin-top: 10%;
     width: 420px;
-    height: 200px;
+    height: 180px;
     background-color: #d4d5d6;
     margin: 40px 40px 0 40px;
 }
@@ -416,7 +415,7 @@ nav ul li a {
     padding: 10px;
     margin-top: 10%;
     max-width: 420px;
-    height: 200px;
+    height: 180px;
     background-color: #d4d5d6;
     margin: 40px 40px 0 40px;
 }
@@ -648,6 +647,7 @@ nav ul li a {
 
 #quote_text{
     font-size: 31px;
+    position: sticky;
 }
 
 #team{
@@ -665,8 +665,7 @@ nav ul li a {
     margin-top: 5%;
 } 
 #our_team{
-    width: 100%;
-    height: 900px;
+    max-width: 100%;
     overflow: hidden;
 }
 
@@ -684,9 +683,10 @@ nav ul li a {
     height: 450px;
     overflow: hidden;
     display: flex;
-    margin-top: 20vh;
+    margin-top: 180px;
     justify-content: space-evenly;
     margin-left: -8vw;
+    
 }
 
 /* Content-1:Start */
@@ -703,7 +703,7 @@ nav ul li a {
   
 .content {
     margin: 15px 2px;
-  }
+}
   
 .image img {
     height: 380px;
@@ -822,52 +822,25 @@ button.message:hover{
 }
   /* Content-1:End */
   
-  /* Responsiveness:Start */
-@media screen and (max-width: 480px) {
-    .box{
-        width: 100vw;
-        border-radius: 0px;
-    }
-    .button{
-        display: flex;
-        flex-direction: column;
-    }
-    .button button{
-        width: 250px;
-    }
-    button.connect{
-        margin-top: 10px;
-    }
-    .content2{
-        padding: 0px 20px;
-    }
-    .content2 img{
-        width: 60px;
-        height: 60px;
-    }
-}
-  /* Responsiveness:End */
-  .items {
+.items {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
 
 }
-.items .item {
+.items .item{
     position: absolute;
     margin-top: 5%;
     left: 20%;
-    width: 60%;
-    max-width: 1200px;
-    height: 60vh;
-    max-height: 800px;
+    width: 1200px;
+    height: 800px;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
 }
-
-.item img {
+  
+.item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -889,52 +862,21 @@ button.message:hover{
     z-index: 2;
     opacity: 0.25;
     transform: translate(100%);
+    width: 40%;
 }
 
-.button-container {
-    position: absolute;
-    top: 5%;
-    left: 0;
-    right: 0;
-}
 
-.items .button-container {
+.items .button-container{
     position: absolute;
-    width: 20%; /* Изменил на проценты */
-    max-width: 275px; /* Добавил максимальную ширину */
+    width: 275px;
     z-index: 100;
 }
   
-.button-container .button {
-    color: #fff;
-    font-size: 2vw; /* Изменил на относительный размер шрифта вьюпорта */
-    cursor: pointer;
-    position: relative;
-    opacity: 1;
-    transition: all 300ms ease-in-out;
-}
-  
-.button-container .button:hover{
-    opacity: 1;
-}
-  
-.button-container .button:before {
-    content: "";
-    position: absolute;
-    width: 3vw; /* Изменил на относительный размер вьюпорта */
-    height: 3vw; /* Изменил на относительный размер вьюпорта */
-    border-top: 0.8vw solid #ffffff; /* Изменил на относительный размер вьюпорта */
-    border-right: 0.8vw solid #ffffff; /* Изменил на относительный размер вьюпорта */
-    transform: rotate(-135deg);
-    margin-right: 4vw; /* Изменил на относительный размер вьюпорта */
-    z-index: -99;
-}
-  
-#btn2 {
+#btn2{
     transform: rotate(-180deg);
     position: absolute;
-    right: -80vw;
-    top: 40vh; /* Измените значение при необходимости */
+    left: 94vw;
+    top: 40vh;
 }
 
 #btn1{
@@ -994,7 +936,7 @@ button.message:hover{
 }
 
 footer{
-    width: 1920px;
+    max-width: 1920px;
     height: 800px;
     background-color: #23573b;
 }
@@ -1105,8 +1047,3 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 600px){
-    body{
-        max-width: 600px;
-    }
-}

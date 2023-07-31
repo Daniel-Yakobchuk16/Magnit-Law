@@ -131,38 +131,33 @@ $("#offer_cards_buisnes_more, #offer_cards_private_more").on("click", function(e
 
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
-const button = document.querySelectorAll(".button");
 
 let current = 0;
-let prev = 6;
-let next = 1;
+const totalSlides = slides.length;
 
-for (let i = 0; i < button.length; i++) {
-  button[i].addEventListener("click", () => (i == 0 ? gotoPrev() : gotoNext()));
-}
+const gotoPrev = () => {
+  current = (current - 1 + totalSlides) % totalSlides;
+  updateSlides();
+};
 
-const gotoPrev = () => (current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1));
+const gotoNext = () => {
+  current = (current + 1) % totalSlides;
+  updateSlides();
+};
 
-const gotoNext = () => (current < 6 ? gotoNum(current + 1) : gotoNum(0));
+slider.addEventListener("click", () => {
+  gotoNext();
+});
 
-const gotoNum = (number) => {
-  current = number;
-  prev = current - 1;
-  next = current + 1;
-
-  for (let i = 0; i < slides.length; i++) {
+const updateSlides = () => {
+  for (let i = 0; i < totalSlides; i++) {
     slides[i].classList.remove("active");
     slides[i].classList.remove("prev");
     slides[i].classList.remove("next");
   }
 
-  if (next == 7) {
-    next = 0;
-  }
-
-  if (prev == -1) {
-    prev = 6;
-  }
+  const prev = (current - 1 + totalSlides) % totalSlides;
+  const next = (current + 1) % totalSlides;
 
   slides[current].classList.add("active");
   slides[prev].classList.add("prev");
@@ -186,11 +181,7 @@ $(document).ready(function() {
   });
 });
 
-window.addEventListener('resize',(e)=> { 
-  document.querySelector('.container_gallery').style.transform = 
-    document.body.clientWidth>1300 ? '' : 
-      `scale(${document.body.clientWidth/1380}) translate(${-(1300-document.body.clientWidth)/2}px)`; 
-});
+
 
 
 

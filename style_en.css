@@ -4,6 +4,15 @@
     box-sizing: border-box;
     font-family: 'Noto Sans';
 }
+::-moz-selection {
+    background-color: #056c51; /* цвет фона выделения для Firefox */
+    color: #ffffff; /* цвет текста в выделенной области для Firefox */
+  }
+  
+  ::selection {
+    background-color: #056c51; /* цвет фона выделения для большинства браузеров */
+    color: #ffffff; /* цвет текста в выделенной области для большинства браузеров */
+  }
 
 body{
     overflow-x: hidden;
@@ -87,7 +96,6 @@ header {
     text-decoration: none;
     padding: 0 10px;
     border-right: 2px solid green;
-    font-weight: bold;
 }
 
 .languages_en {
@@ -96,6 +104,7 @@ header {
     text-decoration: none;
     font-weight: 400;
     font-size: 90%;
+    font-weight: bold;
 }
 
 #contact_img {
@@ -192,7 +201,7 @@ nav ul li a {
 
 #business_card_text{
     margin-top: 33%;
-    max-width: 900px;
+    max-width: 1050px;
     position:static;
     word-break: break-all;
 }
@@ -265,6 +274,7 @@ nav ul li a {
     padding: 10px;
     margin-top: 10%;
     width: 320px;
+    height: 160px;
     background-color: #d4d5d6;
     margin: 40px 40px 0 40px;
 }

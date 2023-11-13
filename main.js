@@ -1,4 +1,17 @@
 $(document).ready(function() {
+  // Стрелка в верх 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#topButton').addClass('show');
+    } else {
+      $('#topButton').removeClass('show');
+    }
+  });
+
+  // Плавная прокрутка вверх при клике на стрелку
+  $('#topButton').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
   // При клике на ссылку с якорем
   $('a[href^="#"]').click(function(e) {
     e.preventDefault();
@@ -11,7 +24,7 @@ $(document).ready(function() {
     }
   });
 
-  // Ваш код для анимации подчеркивания активного пункта меню
+// Ваш код для анимации подчеркивания активного пункта меню
   var nav = $('nav');
   var line = $('<div />').addClass('line');
 
@@ -31,6 +44,17 @@ $(document).ready(function() {
   }
 
   nav.find('ul li a').click(function(e) {
+    if (
+      (this.href.indexOf('team.html') !== -1 && window.location.href.indexOf('/team.html') === -1) ||
+      (this.href.indexOf('team_en.html') !== -1 && window.location.href.indexOf('/team_en.html') === -1) ||
+      (this.href.indexOf('gallery.html') !== -1 && window.location.href.indexOf('/gallery.html') === -1) ||
+      (this.href.indexOf('gallery_en.html') !== -1 && window.location.href.indexOf('/gallery_en.html') === -1)||
+      (this.href.indexOf('index.html') !== -1 && window.location.href.indexOf('/index.html') === -1) ||
+      ((this.href.indexOf('index_en.html') !== -1 && window.location.href.indexOf('/index_en.html') === -1))
+    ) {
+      return;
+    }
+    
     e.preventDefault();
     if (!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
 
@@ -76,6 +100,7 @@ $(document).ready(function() {
 });
 
 
+// offer
 var buisnes = document.getElementById('offer_cards_buisnes');
 var private = document.getElementById('offer_cards_private');
 
@@ -163,23 +188,6 @@ const updateSlides = () => {
   slides[prev].classList.add("prev");
   slides[next].classList.add("next");
 };
-
-
-$(document).ready(function() {
-  // Отображение стрелки при прокрутке вниз
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('#topButton').addClass('show');
-    } else {
-      $('#topButton').removeClass('show');
-    }
-  });
-
-  // Плавная прокрутка вверх при клике на стрелку
-  $('#topButton').click(function() {
-    $('html, body').animate({ scrollTop: 0 }, '300');
-  });
-});
 
 
 

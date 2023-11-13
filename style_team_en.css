@@ -8,10 +8,11 @@
 body{
     overflow-x: hidden;
     min-width: 1400px;
-    background-color: #d9dbdd;
+
 }
-a {
+a{
     text-decoration: none;
+    color: black;
 }
 
 header {
@@ -31,7 +32,7 @@ header {
     max-width: 1000px;
 }
 
-#nav_logo {
+#nav_logo{
     max-width: 300px;
     height: auto;
     margin-top: -20px;
@@ -86,7 +87,6 @@ header {
     text-decoration: none;
     padding: 0 10px;
     border-right: 2px solid green;
-    font-weight: bold;
 }
 
 .languages_en {
@@ -95,6 +95,7 @@ header {
     text-decoration: none;
     font-weight: 400;
     font-size: 90%;
+    font-weight: bold;
 }
 
 #contact_img {
@@ -174,7 +175,7 @@ nav ul li a {
     display: flex;
     height: 830px;
     justify-content: center;
-    background-color: rgb(217, 219, 221); /* спросить у поли */
+    background-color: rgb(217, 219, 221);
 }
 
 #business_card_photo{
@@ -203,226 +204,332 @@ nav ul li a {
     font-family: 'Montserrat Alternates';
 }
 
+
 #offer{
     width: 100%;
-    height: 500px;
+    height: 800px;
     display: flex;
+    justify-content: space-around;
     background-color: rgb(217, 219, 221);
-    justify-content: center;
-    transition: width 0.5s, height 0.5s; /* Add transitions for width and height */
 }
 
-#offer_2{
-    width: 100%;
-    height: 370px;
-    display: flex;
-    background-color: rgb(217, 219, 221);
-    justify-content: center;
-    transition: width 0.5s, height 0.5s; /* Add transitions for width and height */
-}
-
-#offer_faq{
-    width: 1200px;
+#offer_cards{
+    width: 1100px;
     height: 850px;
-    margin-top: 1%;
-    padding: 0px 10px 0px 0px;
+    margin-left: 7%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
 }
 
-#main_descripton{
-    text-align: center;
-    padding: 0px 0px 10px 40px;
-}
-
-#description{
-    font-size: 120%;
-}
-
-.faqs-container{
-    overflow: hidden;
-}
-.faq-singular {
-    position: relative;
-    border-bottom: 1px solid #ccc;
-    padding: 0 30px 0 0;
-}
-
-.faq-singular .faq-question {
-    position: relative;
+#offer_cards_buisnes{
+    max-width: 450px;
+    height: 300px;
     cursor: pointer;
-    margin: 0;
-    padding: 25px 25px 25px 0px;
-    font-weight: 700;
-    font-size: 24px;
-}
-.faq-answer{
-    font-size: 134%;
-}
-.faq-singular .faq-question:before {
-    position: absolute;
-    content: "+";
-    color: #808080;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 28px;
-    font-weight: 700;
-    transition: all .5s;
+
 }
 
-.faq-singular.active .faq-question:before {
-    transform: translateY(-50%) rotate(45deg) scale(1.3);
+#offer_cards_private{
+    max-width: 450px;
+    height: 300px;
+    cursor: pointer;
+    margin: 0 40px 0 40px;
 }
 
-#offer.expanded {
-    height: 1000px; 
-    transition: all 0.5s;
+#offer_cards_buisnes_photo{
+    width: 450px;
+    height: 300px;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
 }
 
-#offer.expanded_2 {
-    height: 600px; 
-    transition: all 0.5s;
+#offer_cards_buisnes_photo:hover {
+    transform: scale(1.05);
 }
 
-#offer.expanded_3{
-    height: 700px; 
-    transition: all 0.5s;
-}
-
-#offer.expanded_4{
-    height: 570px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded {
-    height: 1000px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded_2 {
-    height: 470px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded_3{
-    height: 700px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded_4{
-    height: 570px; 
-    transition: all 0.5s;
-}
-
-.faq-answer {
-    display: none;
-    padding-bottom: 20px;
-}
-
-.faq-singular ul .faq-list-item {
-    position: relative;
-    padding-left: 40px;
-    list-style-type: none;
-    margin: 0 0 10px 0;
-}
-
-.faq-singular ul .faq-list-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    background-image: url('photos/icons/auction-line.png');
-    background-size: cover; 
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+#offer_cards_buisnes_more{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
     visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s;
+    justify-content: space-around;
+    width: 1160px!important;
+    margin-left: -5rem;
 }
 
-.overlay_2 {
-    position: fixed;
-    top: 0;
-    left: 0;
+#offer_cards_buisnes_more_corporate{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
+}
+
+#offer_cards_buisnes_more_tax{
+    padding: 10px;
+    margin-top: 10%;
+    width: 320px;
+    background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
+}
+
+#offer_cards_buisnes_more_bankruptcy{
+    padding: 10px;
+    margin-top: 10%;
+    max-width: 320px;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    height: 180px;
+    background-color: #d4d5d6;
+    margin: 40px 60px 0 40px;
+}
+
+#offer_cards_private_more{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
     visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s;
+    justify-content: space-around;
+    max-width: 1050px;
+    margin-left: -600px;
+}
+
+#offer_cards_private_more_family{
+    padding: 10px;
+    margin-top: 10%;
+    width: 420px;
+    height: 180px;
+    background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
+}
+
+#offer_cards_private_more_individual_bankruptcy{
+    padding: 10px;
+    margin-top: 10%;
+    max-width: 420px;
+    height: 180px;
+    background-color: #d4d5d6;
+    margin: 40px 40px 0 40px;
+}
+
+#hiiden{
+    position: absolute;
+    pointer-events: none;
+    width: 1050px;
+    height: 305px;
+    visibility: hidden;
+    margin-left: -630px;
+    margin-top: -300px;
+}
+
+#offer_cards_private_photo{
+    width: 450px;
+    height: 300px;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_photo:hover {
+    transform: scale(1.05);
+}
+
+#offer_cards_buisnes_more_corporate_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_buisnes_more_corporate_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_corporate_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_tax_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_tax_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_buisnes_more_tax_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_bankruptcy_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#offer_cards_buisnes_more_bankruptcy_photo{
+    width: 37px;
+    height: 37px;
+}
+
+#offer_cards_buisnes_more_bankruptcy_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_private_more_family_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+}
+
+#offer_cards_private_more_family_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_private_more_family_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_private_more_individual_bankruptcy_div_photo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42%;
+}
+
+#offer_cards_private_more_individual_bankruptcy_photo{
+    width: 40px;
+    height: 40px;
+}
+
+#offer_cards_private_more_individual_bankruptcy_text{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#offer_cards_buisnes_more_corporate:hover {
+    background-color: #23573b;
 }
   
-.overlay.active {
-    visibility: visible;
-    opacity: 1;
+#offer_cards_buisnes_more_corporate_div_photo {
+    transition: transform 0.3s ease;
 }
 
-.overlay_2.active {
-    visibility: visible;
-    opacity: 1;
+#offer_cards_buisnes_more_corporate:hover #offer_cards_buisnes_more_corporate_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
 }
 
-.close {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+#offer_cards_buisnes_more_corporate:hover #offer_cards_buisnes_more_corporate_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
 }
 
-.overlay-content {
-    color: #fff;
-    font-size: 24px;
-    width: 70%;
-    background: #23573b;
-    font-weight: normal;
+#offer_cards_buisnes_more_tax:hover {
+    background-color: #23573b;
 }
-.overlay_2-content {
-    color: #fff;
-    font-size: 24px;
-    width: 70%;
-    background: #23573b;
-    text-align: left;
-    font-weight: normal;
+  
+#offer_cards_buisnes_more_tax_div_photo {
+    transition: transform 0.3s ease;
 }
 
-.overlay-content p{
-    padding: 20px 20px 20px 20px;
+#offer_cards_buisnes_more_tax:hover #offer_cards_buisnes_more_tax_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
 }
 
-.overlay_2-content p{
-    padding: 20px 20px 20px 20px;
+#offer_cards_buisnes_more_tax:hover #offer_cards_buisnes_more_tax_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
 }
 
-#description_more{
-    font-size: 140%;
-    font-weight: bold;
-    color: #165f38;
-    cursor: pointer;
+#offer_cards_buisnes_more_bankruptcy:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_buisnes_more_bankruptcy_div_photo {
+    transition: transform 0.3s ease;
 }
 
-#description_more_2{
-    font-size: 100%;
-    font-weight: bold;
-    color: #165f38;
-    cursor: pointer;
+#offer_cards_buisnes_more_bankruptcy:hover #offer_cards_buisnes_more_bankruptcy_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
 }
+
+#offer_cards_buisnes_more_bankruptcy:hover #offer_cards_buisnes_more_bankruptcy_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_private_more_family:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_private_more_family_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_more_family:hover #offer_cards_private_more_family_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_private_more_family:hover #offer_cards_private_more_family_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover {
+    background-color: #23573b;
+}
+  
+#offer_cards_private_more_individual_bankruptcy_div_photo {
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover #offer_cards_private_more_individual_bankruptcy_div_photo {
+    transform: scale(1.1);
+    background-color: rgb(217, 219, 221);
+    border-radius: 5px;
+}
+
+#offer_cards_private_more_individual_bankruptcy:hover #offer_cards_private_more_individual_bankruptcy_text{
+    color: white;
+    font-family: 'Corbel', sans-serif;
+    font-weight: 100;
+}
+
 #quote{
+
     max-width: 1100px;
     height: auto;
     margin-top: 65%;
@@ -434,12 +541,11 @@ nav ul li a {
     font-size: 31px;
 }
 
-
-
 #team{
     width: 100%;
-    height: 2500px;
+    height: 1280px;
     background-color: #d9dbdd;
+    
 }
 
 #team_all{
@@ -453,7 +559,6 @@ nav ul li a {
 #our_team{
     max-width: 100%;
     overflow: hidden;
-    background-color: #d9dbdd;
 }
 
 #our_team_top{
@@ -463,6 +568,7 @@ nav ul li a {
     justify-content: space-evenly;
     display: flex;
     margin-left: -8vw;
+    margin-top: 2rem;
 }
 
 #our_team_bottom{
@@ -683,7 +789,6 @@ button.message:hover{
 #our_team_description{
     width: 100%;
     height: 180px;
-    background-color: #d9dbdd;
 }
 
 #our_team_description_text{
@@ -695,8 +800,10 @@ button.message:hover{
 }
 
 #our_team_description_text_tagline{
-    font-size: 200%;
+    font-size: 400%;
     text-align: center;
+    color: #1d4831;
+    font-weight: bolder;
 }
 
 
@@ -853,4 +960,3 @@ footer{
 #topButton.show {
     opacity: 1;
 }
-

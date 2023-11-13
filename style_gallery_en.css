@@ -8,10 +8,11 @@
 body{
     overflow-x: hidden;
     min-width: 1400px;
-    background-color: #d9dbdd;
+
 }
-a {
+a{
     text-decoration: none;
+    color: black;
 }
 
 header {
@@ -86,7 +87,6 @@ header {
     text-decoration: none;
     padding: 0 10px;
     border-right: 2px solid green;
-    font-weight: bold;
 }
 
 .languages_en {
@@ -95,6 +95,7 @@ header {
     text-decoration: none;
     font-weight: 400;
     font-size: 90%;
+    font-weight: bold;
 }
 
 #contact_img {
@@ -174,7 +175,7 @@ nav ul li a {
     display: flex;
     height: 830px;
     justify-content: center;
-    background-color: rgb(217, 219, 221); /* спросить у поли */
+    background-color: rgb(217, 219, 221);
 }
 
 #business_card_photo{
@@ -203,257 +204,24 @@ nav ul li a {
     font-family: 'Montserrat Alternates';
 }
 
-#offer{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    background-color: rgb(217, 219, 221);
-    justify-content: center;
-    transition: width 0.5s, height 0.5s; /* Add transitions for width and height */
-}
-
-#offer_2{
-    width: 100%;
-    height: 370px;
-    display: flex;
-    background-color: rgb(217, 219, 221);
-    justify-content: center;
-    transition: width 0.5s, height 0.5s; /* Add transitions for width and height */
-}
-
-#offer_faq{
-    width: 1200px;
-    height: 850px;
-    margin-top: 1%;
-    padding: 0px 10px 0px 0px;
-}
-
-#main_descripton{
-    text-align: center;
-    padding: 0px 0px 10px 40px;
-}
-
-#description{
-    font-size: 120%;
-}
-
-.faqs-container{
-    overflow: hidden;
-}
-.faq-singular {
-    position: relative;
-    border-bottom: 1px solid #ccc;
-    padding: 0 30px 0 0;
-}
-
-.faq-singular .faq-question {
-    position: relative;
-    cursor: pointer;
-    margin: 0;
-    padding: 25px 25px 25px 0px;
-    font-weight: 700;
-    font-size: 24px;
-}
-.faq-answer{
-    font-size: 134%;
-}
-.faq-singular .faq-question:before {
-    position: absolute;
-    content: "+";
-    color: #808080;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 28px;
-    font-weight: 700;
-    transition: all .5s;
-}
-
-.faq-singular.active .faq-question:before {
-    transform: translateY(-50%) rotate(45deg) scale(1.3);
-}
-
-#offer.expanded {
-    height: 1000px; 
-    transition: all 0.5s;
-}
-
-#offer.expanded_2 {
-    height: 600px; 
-    transition: all 0.5s;
-}
-
-#offer.expanded_3{
-    height: 700px; 
-    transition: all 0.5s;
-}
-
-#offer.expanded_4{
-    height: 570px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded {
-    height: 1000px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded_2 {
-    height: 470px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded_3{
-    height: 700px; 
-    transition: all 0.5s;
-}
-
-#offer_2.expanded_4{
-    height: 570px; 
-    transition: all 0.5s;
-}
-
-.faq-answer {
-    display: none;
-    padding-bottom: 20px;
-}
-
-.faq-singular ul .faq-list-item {
-    position: relative;
-    padding-left: 40px;
-    list-style-type: none;
-    margin: 0 0 10px 0;
-}
-
-.faq-singular ul .faq-list-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    background-image: url('photos/icons/auction-line.png');
-    background-size: cover; 
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s;
-}
-
-.overlay_2 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s;
-}
-  
-.overlay.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.overlay_2.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.close {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.overlay-content {
-    color: #fff;
-    font-size: 24px;
-    width: 70%;
-    background: #23573b;
-    font-weight: normal;
-}
-.overlay_2-content {
-    color: #fff;
-    font-size: 24px;
-    width: 70%;
-    background: #23573b;
-    text-align: left;
-    font-weight: normal;
-}
-
-.overlay-content p{
-    padding: 20px 20px 20px 20px;
-}
-
-.overlay_2-content p{
-    padding: 20px 20px 20px 20px;
-}
-
-#description_more{
-    font-size: 140%;
-    font-weight: bold;
-    color: #165f38;
-    cursor: pointer;
-}
-
-#description_more_2{
-    font-size: 100%;
-    font-weight: bold;
-    color: #165f38;
-    cursor: pointer;
-}
-#quote{
-    max-width: 1100px;
-    height: auto;
-    margin-top: 65%;
-    margin-left: -100%;
-    text-align: center;
-}
-
 #quote_text{
     font-size: 31px;
 }
 
-
-
 #team{
     width: 100%;
-    height: 2500px;
+    height: 970px;
     background-color: #d9dbdd;
 }
 
 #team_all{
     max-width: 100%;
-    height: 800px;
+    height: 895px;
 }
 
-#team_all_photo{
-    margin-top: 5%;
-} 
 #our_team{
     max-width: 100%;
     overflow: hidden;
-    background-color: #d9dbdd;
 }
 
 #our_team_top{
@@ -485,7 +253,6 @@ nav ul li a {
     padding: 10px;
     text-align: center;
     background: #ededed;
-    position: absolute;    
 }
   
 .content {
@@ -498,7 +265,6 @@ nav ul li a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
     border-radius: 25px;
 }
 
@@ -617,7 +383,6 @@ button.message:hover{
 }
 .items .item{
     position: absolute;
-    margin-top: 5%;
     left: 20%;
     width: 1200px;
     height: 800px;
@@ -683,7 +448,7 @@ button.message:hover{
 #our_team_description{
     width: 100%;
     height: 180px;
-    background-color: #d9dbdd;
+    margin-top: -5rem;
 }
 
 #our_team_description_text{
@@ -853,4 +618,3 @@ footer{
 #topButton.show {
     opacity: 1;
 }
-

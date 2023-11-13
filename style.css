@@ -8,8 +8,31 @@
 body{
     overflow-x: hidden;
     min-width: 1400px;
-
+    max-width: 1920px;
+    text-align: center;
+    /* background-color: #1d4831;
+    border: 2px solid white; */
+    /* background-image: url(photos/bg_test1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; */
 }
+
+@media only screen and (min-width: 1921px){
+    body{
+        margin-left: 25%;
+        margin-right: 25%;
+        overflow-x: hidden;
+        min-width: 1400px;
+        max-width: 1920px;
+        text-align: center;
+        /* background-color: #1d4831;
+        border: 2px solid white; */
+        /* background-image: url(photos/bg_test1.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; */
+    }
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -22,7 +45,7 @@ header {
 #main_nav{
     display: flex;
     justify-content: center;
-    height: 250px;
+    height: 220px;
     background-color: rgb(217, 219, 221);
 }
 
@@ -51,7 +74,7 @@ header {
 #top_nav_right_menu{
     margin: 0;
     padding: 0;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 #top_nav_right_menu_top {
@@ -175,7 +198,7 @@ nav ul li a {
     display: flex;
     height: 830px;
     justify-content: center;
-    background-color: rgb(217, 219, 221); /* спросить у поли */
+    background-color: rgb(217, 219, 221);
 }
 
 #business_card_photo{
@@ -207,15 +230,10 @@ nav ul li a {
 
 #offer{
     width: 100%;
-    height: 900px;
+    height: 800px;
     display: flex;
+    justify-content: space-around;
     background-color: rgb(217, 219, 221);
-}
-
-#offer_femida{
-    width: 550px;
-    height: 550px;
-    margin-left: 2%;
 }
 
 #offer_cards{
@@ -230,7 +248,8 @@ nav ul li a {
 #offer_cards_buisnes{
     max-width: 450px;
     height: 300px;
-} 
+    cursor: pointer;
+}
 
 #offer_cards_private{
     max-width: 450px;
@@ -243,14 +262,19 @@ nav ul li a {
     width: 450px;
     height: 300px;
     background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_buisnes_photo:hover {
+    transform: scale(1.05);
 }
 
 #offer_cards_buisnes_more{
     display: flex;
     visibility: hidden;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 1160px!important;
-    margin-left: -40px;
+    margin-left: -5rem;
 }
 
 #offer_cards_buisnes_more_corporate{
@@ -284,7 +308,7 @@ nav ul li a {
     visibility: hidden;
     justify-content: space-around;
     max-width: 1050px;
-    margin-left: -600px;
+    margin-left: -550px;
 }
 
 #offer_cards_private_more_family{
@@ -319,6 +343,11 @@ nav ul li a {
     width: 450px;
     height: 300px;
     background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+#offer_cards_private_photo:hover {
+    transform: scale(1.05);
 }
 
 #offer_cards_buisnes_more_corporate_photo{
@@ -522,19 +551,17 @@ nav ul li a {
 }
 
 #quote{
-
     max-width: 1100px;
     height: auto;
-    margin-top: 65%;
+    margin-top: 55%;
     margin-left: -100%;
     text-align: center;
 }
 
 #quote_text{
+    margin-left: -9rem;
     font-size: 31px;
 }
-
-
 
 #team{
     width: 100%;
@@ -796,28 +823,6 @@ button.message:hover{
 #our_team_description_text_tagline{
     font-size: 200%;
     text-align: center;
-}
-
-
-#topButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: #23573b;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 9999;
-}
-
-#topButton.show {
-    opacity: 1;
 }
 
 footer{

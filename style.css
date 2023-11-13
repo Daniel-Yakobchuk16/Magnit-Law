@@ -8,29 +8,6 @@
 body{
     overflow-x: hidden;
     min-width: 1400px;
-    max-width: 1920px;
-    text-align: center;
-    /* background-color: #1d4831;
-    border: 2px solid white; */
-    /* background-image: url(photos/bg_test1.jpg);
-    background-repeat: no-repeat;
-    background-size:cover; */
-}
-
-@media only screen and (min-width: 1921px){
-    body{
-        margin-left: 25%;
-        margin-right: 25%;
-        overflow-x: hidden;
-        min-width: 1400px;
-        max-width: 1920px;
-        text-align: center;
-        /* background-color: #1d4831;
-        border: 2px solid white; */
-        /* background-image: url(photos/bg_test1.jpg);
-        background-repeat: no-repeat;
-        background-size:cover; */
-    }
 }
 
 a{

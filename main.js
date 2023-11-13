@@ -48,12 +48,14 @@ $(document).ready(function() {
       (this.href.indexOf('team.html') !== -1 && window.location.href.indexOf('/team.html') === -1) ||
       (this.href.indexOf('team_en.html') !== -1 && window.location.href.indexOf('/team_en.html') === -1) ||
       (this.href.indexOf('gallery.html') !== -1 && window.location.href.indexOf('/gallery.html') === -1) ||
-      (this.href.indexOf('gallery_en.html') !== -1 && window.location.href.indexOf('/gallery_en.html') === -1)||
+      (this.href.indexOf('gallery_en.html') !== -1 && window.location.href.indexOf('/gallery_en.html') === -1) ||
       (this.href.indexOf('index.html') !== -1 && window.location.href.indexOf('/index.html') === -1) ||
-      ((this.href.indexOf('index_en.html') !== -1 && window.location.href.indexOf('/index_en.html') === -1))
-    ) {
+      (this.href.indexOf('index_en.html') !== -1 && window.location.href.indexOf('/index_en.html') === -1) ||
+      (this.href.indexOf('YOUR_REPO_NAME') !== -1 && window.location.href.indexOf('/Magnit-Law') === -1)
+  ) {
       return;
-    }
+  }
+  
     
     e.preventDefault();
     if (!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {

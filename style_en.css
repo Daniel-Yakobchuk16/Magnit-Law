@@ -7,12 +7,12 @@
 ::-moz-selection {
     background-color: #056c51; /* цвет фона выделения для Firefox */
     color: #ffffff; /* цвет текста в выделенной области для Firefox */
-  }
+}
   
-  ::selection {
+::selection {
     background-color: #056c51; /* цвет фона выделения для большинства браузеров */
     color: #ffffff; /* цвет текста в выделенной области для большинства браузеров */
-  }
+}
 
 body{
     overflow-x: hidden;
@@ -834,8 +834,8 @@ footer{
 }
 
 #footer_left_contact{
-    width: 50%;
-    height: 50%;
+    max-width: 37rem;
+    height: 25rem;
     border-radius: 63px;
     background: #23573b;
     box-shadow:  50px 50px 100px #1d4831,

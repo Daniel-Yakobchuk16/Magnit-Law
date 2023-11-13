@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: 'Noto Sans';
 }
-::-moz-selection {
+
+::-moz-selection{
     background-color: #056c51; /* цвет фона выделения для Firefox */
     color: #ffffff; /* цвет текста в выделенной области для Firefox */
 }
@@ -17,8 +18,8 @@
 body{
     overflow-x: hidden;
     min-width: 1400px;
-
 }
+
 a{
     text-decoration: none;
     color: black;

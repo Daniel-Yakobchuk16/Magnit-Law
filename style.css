@@ -166,6 +166,7 @@ nav ul li:hover {
 nav ul li.active {
     opacity: 1;
 }
+
 nav ul li:last-child {
     margin-right: 0;
 }
@@ -213,7 +214,6 @@ nav ul li a {
     text-align: center;
     font-family: 'Montserrat Alternates';
 }
-
 
 #offer{
     width: 100%;
@@ -563,7 +563,8 @@ nav ul li a {
 
 #team_all_photo{
     margin-top: 5%;
-} 
+}
+ 
 #our_team{
     max-width: 100%;
     overflow: hidden;
@@ -589,232 +590,9 @@ nav ul li a {
     
 }
 
-/* Content-1:Start */
-
-.box {
-    max-width: 450px;
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-    text-align: center;
-    background: #ededed;
-    position: absolute;    
-}
-  
-.content {
-    margin: 15px 2px;
-}
-  
-.image img {
-    height: 380px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-    border-radius: 25px;
-}
-
-#anton_photo{
-    width: 320px;
-}
-
-.level {
-    font-size: 0.7em;
-    background-color: rgb(164, 189, 183, 0.5);
-    width: 75px;
-    padding: 3px;
-    border-radius: 5px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    display: block;
-    margin: 0px auto 10px;
-}
-
-#dmytro_level{
-    width: 125px;
-}
-
-#david_level{
-    width: 105px;
-}
-
-.name{
-    font-size: 1.25em;
-    font-weight: bolder;
-    letter-spacing: 1px;
-}
-  
-.job_title{
-    font-size: 0.65em;
-    font-weight: bolder;
-    color: gray;
-    margin-top: -2px;
-}
-  
-.job_discription{
-    font-size: 0.7em;
-    color: gray;
-    margin: 10px 30px 20px;
-}
-  
-#logo_phone{
-    display: flex;
-}
-  
-#logo_email{
-   display: flex;
-}
-  
-#logo_phone:hover{
-  color: rgb(34, 95, 62);
-}
-  
-#logo_email:hover{
-    color: rgb(34, 95, 62);
-}
-  
-.icons button{
-    width: fit-content;
-    height: fit-content;
-    border: none;
-    font-size: 1em;
-}
-  
-ion-icon:hover{
-    color: #23573bce;
-    transition: 0.5s;
-}
-  
-button{
-  width: 130px;
-  height: 40px;
-  border-radius: 10px;
-  font-weight: bolder;
-}
-  
-.button{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin: 20px 30px 0px;
-}
-  
-.button .message{
-    background: #ededed;
-    border: 2px solid #000;;
-}
-  
-.button .connect{
-    background-color: #23573b;
-    color: #ededed;
-    border: none;
-    margin: 0 10px;
-}
-button.connect:hover{
-  letter-spacing: 1px;
-  transition: 0.5s;
-}
-button.message:hover{
-  letter-spacing: 1px;
-  transition: 0.5s;
-  background: #23573bce;
-}
-  /* Content-1:End */
-  
-.items {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-
-}
-.items .item{
-    position: absolute;
-    margin-top: 5%;
-    left: 20%;
-    width: 1200px;
-    height: 800px;
-    overflow: hidden;
-    transition: all 300ms ease-in-out;
-    z-index: -1;
-    opacity: 0;
-}
-  
-.item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item.active{
-    opacity: 1;
-    z-index: 99;
-}
-  
-.item.prev{
-    z-index: 2;
-    opacity: 0.25;
-    transform: translate(-100%);
-}
-  
-.item.next{
-    z-index: 2;
-    opacity: 0.25;
-    transform: translate(100%);
-    width: 40%;
-}
-
-
-.items .button-container{
-    position: absolute;
-    width: 275px;
-    z-index: 100;
-}
-  
-#btn2{
-    transform: rotate(-180deg);
-    position: absolute;
-    left: 94vw;
-    top: 40vh;
-}
-
-#btn1{
-    position: absolute;
-    left: 4vw;
-    top: 35vh;
-}
-
-.button-container .button:nth-child(1) {
-    float: left;
-}
-  
-.button-container .button:nth-child(2) {
-    float: right;
-}
-
-
-#our_team_description{
-    width: 100%;
-    height: 180px;
-    margin-top: 8%;
-}
-
-#our_team_description_text{
-    width: 80%;
-    height: 300px;
-    margin-left: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-#our_team_description_text_tagline{
-    font-size: 200%;
-    text-align: center;
-}
-
 footer{
     width: 100%;
-    height: 800px;
+    height: 801px;
     background-color: #23573b;
 }
 
@@ -918,6 +696,7 @@ footer{
     width: 100%;
     height: auto;
 }
+
 #footer_quote_text{
     color: white;
     font-size: 160%;
